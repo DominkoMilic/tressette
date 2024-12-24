@@ -1,0 +1,91 @@
+h1,
+h2 {
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: #004d4d;
+  border: 5px solid #002626;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.new-game-btn {
+  background: linear-gradient(135deg, #5c2f0e, #2c1708);
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-game-btn:hover {
+  background: linear-gradient(135deg, #2c1708, #5c2f0e);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.new-game-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+.card-deck {
+  position: relative;
+  width: 150px;
+  height: 250px;
+}
+
+.card-deck .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.player-one-cards,
+.player-two-cards,
+.cards-on-table,
+.drawn-cards {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: #004d4d;
+  height: 150px;
+  align-items: center;
+  justify-items: center;
+}
+
+.cards-on-table {
+  grid-template-columns: 2;
+}
+
+.drawn-cards {
+  grid-template-columns: 2;
+}
